@@ -1,0 +1,29 @@
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Righteous', cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-light: #fff;
+  --color-dark: #242424;
+  /* --bg-dark: #171717; */
+  --color-special: #ff6347;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--color-dark);
+}
+
+a {
+  text-decoration: none;
+}

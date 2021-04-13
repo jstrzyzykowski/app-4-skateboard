@@ -1,0 +1,66 @@
+.btn {
+  font-weight: bold;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  border: 1px solid var(--color-light);
+  transition: 0.2s ease-in-out;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--color-light);
+  border: 1px solid var(--color-light);
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+
+.btn-special {
+  background-color: rgb(255, 99, 71,0.1);
+  color: var(--color-special);
+  border: 1px solid var(--color-special);
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: var(--color-light);
+  border: 1px solid var(--color-light);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+.btn-special:hover {
+  background-color: var(--color-special);
+  color: var(--color-light);
+}
+
+.btn-medium {
+  padding: 0.8rem 2rem;
+  font-size: 1.6rem;
+}
+
+.btn-large {
+  padding: 1.2rem 2.6rem;
+  font-size: 1.8rem;
+}
+
+.btn-extra-large {
+  padding: 1.2rem 4.6rem;
+  font-size: 2rem;
+}
+
+.btn-thin {
+  padding: 0.4rem 2rem;
+  font-size: 1.6rem;
+}
+
+
+

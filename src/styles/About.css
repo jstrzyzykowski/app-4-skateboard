@@ -1,0 +1,105 @@
+.about {
+  padding-left: 10rem;
+  height: 100vh;
+  position: relative;
+  font-family: 'Righteous', cursive;
+  color: var(--color-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: padding-left 0.2s ease-out;
+  background-image: url('../images/about-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: color;
+  /* filter: grayscale(100%); */
+  /* box-shadow: inset 0 0 200px 10px black; */
+}
+
+.navbar.expanded + .about {
+  padding-left: 35rem;
+}
+
+.about__container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 3rem;
+}
+
+.about__text {
+  grid-row: 1;
+  position: relative;
+  animation: moveAndShow 0.4s ease-out 1 both;
+}
+
+.about__text h2 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  line-height: 0.8;
+}
+
+.sub-header {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: var(--color-special);
+  margin-bottom: 1rem;
+  text-align: left;
+  width: 100%;
+}
+
+.about__text-description {
+  margin-bottom: 2rem;
+}
+
+.about__socials {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.about__socials i {
+  font-size: 3.4rem;
+  margin-right: 1.2rem;
+  cursor: pointer;
+  transition: color 0.2s ease-out;
+}
+
+.about__socials i:hover {
+  color: tomato;
+}
+
+.about__photo {
+  grid-row: 1 / span 2;
+  background-image: url('../images/hero-2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 6px;
+  /* filter: grayscale(100%); */
+  position: relative;
+  animation: show 0.4s ease-out 1 both;
+}
+
+.about__set {
+  animation: show 0.7s ease-out 1 both;
+}
+
+.about__set-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .about {
+    padding-left: 0;
+  }
+}

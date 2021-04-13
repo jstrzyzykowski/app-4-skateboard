@@ -1,0 +1,40 @@
+.notfound {
+  height: 100vh;
+  width: 100%;
+  padding-left: 10rem;
+  background-image: url('../images/404.jpg');
+  position: relative;
+  font-family: 'Righteous', cursive;
+  color: var(--color-light);
+  background-color: rgba(39, 39, 39, 0.8);
+  background-blend-mode: color;
+}
+
+.notfound__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.notfound__code {
+  font-size: 20rem;
+  /* color: rgba(255, 255, 255, 0.5); */
+  color: rgb(255, 99, 71, 0.9);
+  letter-spacing: 5px;
+}
+
+.notfound__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.notfound__container h3 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 6rem;
+  margin-bottom: 1rem;
+}
